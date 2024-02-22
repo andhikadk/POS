@@ -8,6 +8,6 @@ class UserController extends Controller
 {
     public function index($id, $name)
     {
-        return 'User ' . $id . ' Name ' . $name;
+        return view('user.index', ['id' => $id, 'name' => $name]);
     }
 }

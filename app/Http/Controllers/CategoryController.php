@@ -8,21 +8,25 @@ class CategoryController extends Controller
 {
     public function foodBeverage()
     {
-        return 'Food and Beverage';
+        $name = 'Food and Beverage';
+        return view('category.index')->with('name', $name);
     }
 
     public function beautyHealth()
     {
-        return 'Beauty and Health';
+        $name = 'Beauty and Health';
+        return view('category.index')->with('name', $name);
     }
 
     public function homeCare()
     {
-        return 'Home Care';
+        $name = 'Home Care';
+        return view('category.index')->with('name', $name);
     }
 
     public function babyKid()
     {
-        return 'Baby and Kids';
+        $name = 'Baby and Kid';
+        return view('category.index')->with('name', $name);
     }
 }

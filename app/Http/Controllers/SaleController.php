@@ -8,6 +8,6 @@ class SaleController extends Controller
 {
     public function index()
     {
-        return 'Halaman transaksi POS';
+        return view('sale.index');
     }
 }
